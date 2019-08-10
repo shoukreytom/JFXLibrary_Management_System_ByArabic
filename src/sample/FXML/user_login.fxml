@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<AnchorPane prefHeight="649.0" prefWidth="718.0" xmlns:fx="http://javafx.com/fxml" fx:controller="sample.Controller.LogIn"
+            stylesheets="@../Style/style.css" style="-fx-background-color: #aaaaaa">
+    <Pane prefHeight="160.0" prefWidth="799.0"
+          AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" style="-fx-background-color: black">
+    </Pane>
+
+    <Pane layoutX="92.0" layoutY="186.0" prefHeight="435.0" prefWidth="534.0"
+          style="-fx-background-color: #f2f2f2; -fx-background-radius: 50px;">
+        <HBox layoutX="63.0" layoutY="77.0" prefHeight="47.0" prefWidth="409.0" spacing="5">
+            <TextField fx:id="name" alignment="CENTER_RIGHT" promptText="ادخل اسم المستخدم" style="-fx-background-radius: 30px;"
+                       prefWidth="400" prefHeight="47" onContextMenuRequested="#contex_requested">
+                <contextMenu>
+                    <ContextMenu>
+                        <items>
+                            <MenuItem text="نسخ" fx:id="co" disable="true"/>
+                            <MenuItem text="قص" fx:id="cu" disable="true"/>
+                            <MenuItem text="لصق" fx:id="pa"/>
+                            <MenuItem text="تحديد الكل" fx:id="se" disable="true"/>
+                        </items>
+                    </ContextMenu>
+                </contextMenu>
+                <font>
+                    <Font name="DejaVu Serif Bold" size="18.0"/>
+                </font>
+            </TextField>
+            <FontAwesomeIconView glyphName="USER" size="50" fill="dodgerblue"/>
+        </HBox>
+        <HBox layoutX="63.0" layoutY="184.0" prefHeight="47.0" prefWidth="409.0" spacing="5">
+            <PasswordField fx:id="pass" alignment="CENTER_RIGHT" promptText="ادخل كلمة المرور" style="-fx-background-radius: 30px;"
+                           prefHeight="47" prefWidth="400">
+                <font>
+                    <Font name="DejaVu Serif Bold" size="18.0"/>
+                </font>
+                <contextMenu>
+                    <ContextMenu>
+                    </ContextMenu>
+                </contextMenu>
+            </PasswordField>
+            <FontAwesomeIconView glyphName="LOCK" size="50" fill="goldenrod"/>
+        </HBox>
+        <Label fx:id="message" textFill="red" layoutX="190" layoutY="260" alignment="CENTER_RIGHT">
+            <font>
+                <Font name="DejaVu Serif Bold" size="16.0"/>
+            </font>
+        </Label>
+        <Button fx:id="log" layoutX="153.0" layoutY="300.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="208.0"
+                style="-fx-background-radius: 30px;" text="تسجيل الدخول" textAlignment="RIGHT" onAction="#logIn">
+            <font>
+                <Font name="DejaVu Serif Bold" size="20.0"/>
+            </font>
+        </Button>
+        <Button alignment="CENTER_RIGHT" fx:id="forget" layoutX="313.0" layoutY="374.0" prefHeight="47.0" prefWidth="179.0"
+               text="لقد نسيت كلمة المرور؟" textAlignment="RIGHT" textFill="darkblue"
+                style="-fx-background-color: transparent" onAction="#forget_pass" id="forg">
+            <font>
+                <Font name="DejaVu Serif Bold" size="18.0"/>
+            </font>
+        </Button>
+
+    </Pane>
+</AnchorPane>

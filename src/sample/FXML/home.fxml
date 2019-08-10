@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+
+<AnchorPane prefHeight="650.0" prefWidth="799.0" fx:controller="sample.Controller.Home"
+            xmlns:fx="http://javafx.com/fxml/1" id="base"
+            stylesheets="@../Style/home.css">
+    <children>
+        <Pane layoutX="68.0" layoutY="27.0" prefHeight="160.0" prefWidth="799.0" style="-fx-background-color: black;"
+              AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+
+        <VBox layoutX="81.0" layoutY="199.0" prefHeight="416.0" prefWidth="719.0" spacing="17.0"
+              style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="40.0"
+              AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="200.0">
+            <HBox alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="719.0" spacing="100.0"
+                  style="-fx-background-color: transparent;">
+                <Button alignment="CENTER_RIGHT" prefWidth="310.0" text=" قائمة الكتب" onAction="#books">
+                    <font>
+                        <Font name="DejaVu Serif Bold" size="32.0"/>
+                    </font>
+                    <graphic>
+                        <FontAwesomeIconView glyphName="TH_LIST" size="50" fill="saddlebrown"/>
+                    </graphic>
+                </Button>
+                <Button alignment="CENTER" prefWidth="310.0" text=" محتويات المكتبة" onAction="#contents">
+                    <font>
+                        <Font name="DejaVu Serif Bold" size="32.0"/>
+                    </font>
+                    <graphic>
+                        <FontAwesomeIconView glyphName="TABLE" size="50" fill="limegreen"/>
+                    </graphic>
+                </Button>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="90.0" prefWidth="719.0"
+                  spacing="100.0" style="-fx-background-color: transparent;">
+                <Button alignment="CENTER_RIGHT" prefWidth="310.0" text=" الاحصائيات" onAction="#chart">
+                    <font>
+                        <Font name="DejaVu Serif Bold" size="32.0"/>
+                    </font>
+                    <graphic>
+                        <FontAwesomeIconView glyphName="BAR_CHART" size="50" fill="yellowgreen"/>
+                    </graphic>
+                </Button>
+                <Button alignment="CENTER" prefWidth="310.0" text=" النشاط اليومى      " onAction="#daysActivity">
+                    <font>
+                        <Font name="DejaVu Serif Bold" size="32.0"/>
+                    </font>
+                    <graphic>
+                        <FontAwesomeIconView glyphName="CALENDAR" size="50" fill="purple"/>
+                    </graphic>
+                </Button>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="89.0" prefHeight="90.0" prefWidth="719.0"
+                  spacing="100.0">
+                <Button alignment="CENTER" prefWidth="310.0" text=" تسجيل الخروج     " onAction="#logOut">
+                    <font>
+                        <Font name="DejaVu Serif Bold" size="32.0"/>
+                    </font>
+                    <graphic>
+                        <FontAwesomeIconView glyphName="SIGN_OUT" size="50" fill="darkblue"/>
+                    </graphic>
+                </Button>
+                <Button alignment="CENTER" contentDisplay="RIGHT" layoutX="419.0" layoutY="10.0"
+                        mnemonicParsing="false" prefHeight="90.0" prefWidth="310.0"
+                         text=" الاعدادات         " onAction="#setting">
+                    <font>
+                        <Font name="DejaVu Serif Bold" size="32.0"/>
+                    </font>
+                    <graphic>
+                        <FontAwesomeIconView glyphName="WRENCH" size="50" fill="crimson"/>
+                    </graphic>
+                </Button>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="168.0" prefHeight="90.0" prefWidth="719.0" spacing="60">
+                <Button mnemonicParsing="false" prefWidth="310.0" text=" تحديث   " onAction="#update">
+                    <font>
+                        <Font name="DejaVu Serif Bold" size="32.0"/>
+                    </font>
+                    <graphic>
+                        <FontAwesomeIconView glyphName="SLIDERS" size="50" fill="gold"/>
+                    </graphic>
+                </Button>
+                <Button alignment="CENTER" prefWidth="310.0" text=" الاغلاق           " onAction="#close">
+                    <font>
+                        <Font name="DejaVu Serif Bold" size="32.0"/>
+                    </font>
+                    <graphic>
+                        <FontAwesomeIconView glyphName="POWER_OFF" size="50" fill="red"/>
+                    </graphic>
+                </Button>
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>

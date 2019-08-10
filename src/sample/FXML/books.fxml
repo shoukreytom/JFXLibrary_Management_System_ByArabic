@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<AnchorPane prefHeight="663.0"
+            prefWidth="970.0" style="-fx-background-color: rgb(44,44,44);" fx:controller="sample.Controller.Books"
+            xmlns:fx="http://javafx.com/fxml/1" stylesheets="@../Style/style.css">
+    <children>
+        <Pane layoutX="111.0" layoutY="6.0" prefHeight="137.0" prefWidth="970.0" style="-fx-background-color: black;"
+              AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+        <TableView layoutY="141.0" prefHeight="522.0" prefWidth="819.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="151.0"
+                    AnchorPane.topAnchor="141.0" fx:id="table">
+            <columns>
+                <TableColumn prefWidth="99.0" text="السعر" fx:id="price"/>
+                <TableColumn prefWidth="113.0" text="العدد" fx:id="num"/>
+                <TableColumn prefWidth="160.0" text="المرحلة" fx:id="stage"/>
+                <TableColumn prefWidth="150.0" text="الصف" fx:id="t_class"/>
+                <TableColumn prefWidth="240.0" text="اسم الكتاب" fx:id="name"/>
+                <TableColumn prefWidth="56.0" text="الرقم" fx:id="id"/>
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+        </TableView>
+        <Pane layoutX="750.0" layoutY="342.0" prefHeight="307.0" prefWidth="147.0"
+              style="-fx-background-color: transparent; -fx-background-radius: 30px;" AnchorPane.bottomAnchor="0.0"
+              AnchorPane.rightAnchor="0.0">
+            <children>
+                <ComboBox promptText="نوع الكتاب" prefHeight="36.0" prefWidth="120.0" layoutX="25" fx:id="book_choice"
+                          style="-fx-font-family: 'dejaVu serif bold';-fx-font-size: 14px;-fx-font-color: white">
+
+                </ComboBox>
+                <Button onAction="#home" layoutY="55.0" text="القائمة الرئيسية"  alignment="CENTER_RIGHT" contentDisplay="RIGHT"
+                        style="-fx-background-color: transparent">
+                    <font>
+                        <Font name="DejaVu Serif Bold" size="18.0"/>
+                    </font>
+                    <graphic>
+                        <FontAwesomeIconView glyphName="HOME" fill="blue" size="20"/>
+                    </graphic>
+                </Button>
+                <Button contentDisplay="RIGHT" layoutX="18.0" layoutY="118.0" mnemonicParsing="false" prefHeight="26.0"
+                        prefWidth="120.0" text="اضافة" style="-fx-background-color: transparent" onAction="#addBook">
+                    <font>
+                        <Font name="DejaVu Serif Bold" size="18.0"/>
+                    </font>
+                    <graphic>
+                        <FontAwesomeIconView glyphName="PLUS" fill="green" size="20"/>
+                    </graphic>
+                </Button>
+                <Button contentDisplay="RIGHT" layoutX="18.0" layoutY="168.0" mnemonicParsing="false" prefHeight="26.0"
+                        prefWidth="120.0" text="حذف" style="-fx-background-color: transparent" onAction="#delete">
+                    <font>
+                        <Font name="DejaVu Serif Bold" size="18.0"/>
+                    </font>
+                    <graphic>
+                        <FontAwesomeIconView glyphName="REMOVE" fill="red" size="20"/>
+                    </graphic>
+                </Button>
+                <Button contentDisplay="RIGHT" layoutX="18.0" layoutY="218.0" mnemonicParsing="false" prefHeight="26.0"
+                        prefWidth="120.0" text="تعديل" style="-fx-background-color: transparent" onAction="#edit">
+                    <font>
+                        <Font name="DejaVu Serif Bold" size="18.0"/>
+                    </font>
+                    <graphic>
+                        <FontAwesomeIconView glyphName="EDIT" fill="purple" size="20"/>
+                    </graphic>
+                </Button>
+                <Button contentDisplay="RIGHT" layoutX="6.0" layoutY="268.0" mnemonicParsing="false" prefHeight="36.0"
+                        prefWidth="136.0" text="تحديث القائمة" style="-fx-background-color: transparent" onAction="#refreshTable">
+                    <font>
+                        <Font name="DejaVu Serif Bold" size="16.0"/>
+                    </font>
+                    <graphic>
+                        <FontAwesomeIconView glyphName="REFRESH" fill="blue" size="20"/>
+                    </graphic>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sqlite-jdbc-3.16.1">
+    <CLASSES>
+      <root url="jar:///media/shoukrey/Local Disk/Private/Programming/Libraries/sqlite-jdbc-3.16.1.jar!/" />
+      <root url="jar:///media/shoukrey/Local Disk/Private/Programming/Libraries/fontawesomefx-8.9.jar!/" />
+      <root url="jar:///media/shoukrey/Local Disk/Private/Programming/Libraries/fontawesomefx-8.0.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

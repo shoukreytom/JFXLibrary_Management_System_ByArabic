@@ -1,0 +1,17 @@
+.button:hover {
+    -fx-font-size: 30;
+    -fx-font-family: 'dejaVu serif bold';
+}
+.button {
+    -fx-cursor: HAND;
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-content-display: right;
+}
+#base {
+    -fx-background-color: rgb(44,44,44);
+}
+.hbox {
+    -fx-background-color: green;
+
+}
