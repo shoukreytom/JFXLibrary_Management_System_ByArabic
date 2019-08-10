@@ -1,7 +1,7 @@
 # Library_Management_System
 	it's an app for managing libraries programmed by JavaFX. only Arabic lanagauge is supported
 	
-# noe:
+# note:
 	this app still under working
 
 # Screenshots
